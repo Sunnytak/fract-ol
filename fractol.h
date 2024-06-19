@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stak <stak@student.hive.fi>                +#+  +:+       +#+        */
+/*   By: stak <stak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:39:24 by stak              #+#    #+#             */
-/*   Updated: 2024/06/17 12:31:53 by stak             ###   ########.fr       */
+/*   Updated: 2024/06/19 15:41:05 by stak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 # include "libft/libft.h"
 # include "ft_printf.h"
-# include "MLX/include/MLX42/MLX42.h"
+# include "mlx.h"
 # include <math.h>
 # include <pthread.h>
 # define WIDTH 800
 # define HEIGHT 800
 
 typedef struct s_complex
-{
+{git 
 	double	real;
 	double	ima;
 }	t_complex;
