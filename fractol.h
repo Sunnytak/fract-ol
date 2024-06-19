@@ -6,7 +6,7 @@
 /*   By: stak <stak@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 11:39:24 by stak              #+#    #+#             */
-/*   Updated: 2024/06/14 14:57:08 by stak             ###   ########.fr       */
+/*   Updated: 2024/06/17 12:31:53 by stak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,25 @@
 
 # include "libft/libft.h"
 # include "ft_printf.h"
-# include "mlx/mlx.h"
+# include "MLX/include/MLX42/MLX42.h"
 # include <math.h>
 # include <pthread.h>
+# define WIDTH 800
+# define HEIGHT 800
+
+typedef struct s_complex
+{
+	double	real;
+	double	ima;
+}	t_complex;
 
 
 typedef struct s_fractal
 {
 	char			*name;
-	mlx_t			*mlx_connection;
+	void			*mlx_connection;
 	void			*mlx_new_window;
-	mlx_image_t		*img;
+	void			*img;
 	void			*colors;
 	double			esc_value;
 	int				iteration_def;
